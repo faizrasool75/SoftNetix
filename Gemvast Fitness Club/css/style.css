@@ -1,0 +1,1247 @@
+/* NavBar */
+
+.header {
+  background-color: var(--color-white);
+  margin: 1.5rem auto;
+  /* position: relative; */
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-box {
+}
+
+.logo {
+  max-width: 17rem;
+}
+
+.main-menu {
+}
+
+.nav-bar__menu {
+  display: flex;
+}
+
+.nav-bar__item {
+  list-style: none;
+  font-family: var(--primary-font);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 4rem;
+}
+
+.head_icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: var(--color-heading);
+}
+
+.head_icon:hover {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: var(--color-primary);
+}
+
+.nav-bar__link:link,
+.nav-bar__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-heading);
+}
+
+.nav-bar__link:hover,
+.nav-bar__link:active {
+  color: var(--color-primary);
+}
+
+/* Mobile Nav */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: var(--color-text);
+}
+
+.icon-mobile-nav[name="close-circle-outline"] {
+  display: none;
+}
+
+/* Hero Section */
+
+.hero-section {
+  height: 90vh;
+  background-image: url("https://wp.xpeedstudio.com/gemvast/home-one-page-light/wp-content/uploads/sites/6/2020/02/default-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  margin: 3rem 0;
+  text-align: center;
+  font-family: var(--heading-font);
+  line-height: 1;
+}
+
+.sm-title {
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.title {
+  font-size: 12rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.title-strong {
+  color: var(--color-primary);
+  font-weight: 900;
+}
+
+.btn {
+  margin: 2rem 0;
+  display: block;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 2rem 4rem;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--color-hover);
+  color: var(--color-white);
+}
+/* About Section */
+.about-section {
+  margin: var(--margin-top-big);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+strong {
+  color: var(--color-primary);
+}
+
+.about-heading {
+  font-family: var(--heading-font);
+  font-size: 4.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.about-text {
+  margin: var(--margin-top-min);
+  font-family: var(--primary-font);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--color-text);
+  text-align: center;
+  width: 55%;
+  margin-bottom: 8rem;
+}
+
+.feature {
+  display: flex;
+}
+
+.feature-icon {
+  width: 7.5rem;
+  height: 6rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature-box {
+  width: 28.5rem;
+  height: 22.5rem;
+  margin-left: 2rem;
+}
+
+.feature-title {
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.feature-text {
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-text);
+}
+/* Training Section */
+.training {
+  background-color: var(--color-whitesmoke);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 8rem 0;
+}
+
+.train-head {
+  font-family: var(--heading-font);
+  font-size: 4.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.train-text {
+  font-family: var(--primary-font);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--color-text);
+  width: 70%;
+}
+/* Gym  */
+.gym-sec {
+  display: flex;
+  justify-content: space-around; /* Center images horizontally */
+}
+
+.gym-highlight {
+  flex: 1; /* Each image occupies equal space */
+  position: relative;
+  overflow: hidden;
+}
+
+.highlight {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%; /* Ensure image fills the container */
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex; /* Make it a flex container */
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Align items in the middle */
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 2; /* Ensure overlay is above the image */
+}
+
+.highlight:hover .overlay,
+.highlight:active .overlay {
+  /* Show overlay on hover and active */
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1); /* Zoom effect */
+}
+
+.overlay-img {
+  width: 100%;
+  height: 100%; /* Ensure image fills the container */
+  object-fit: cover; /* Maintain aspect ratio */
+  filter: brightness(50%);
+  z-index: 1; /* Ensure image is behind overlay */
+  transition: transform 0.5s ease; /* Smooth transition for zoom effect */
+}
+
+.highlight:hover .overlay-img {
+  transform: scale(1.1); /* Zoom out on hover */
+}
+
+.overlay-icon {
+  width: 80px; /* Adjust size as needed */
+  margin-bottom: 10px; /* Add space between icon and title */
+  background-color: var(
+    --color-heading
+  ); /* Add a background color for better visibility */
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.overlay-title {
+  font-family: var(--heading-font);
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 2rem;
+  color: white; /* Ensure title text is visible */
+}
+
+.overlay-text {
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  font-weight: 300;
+  display: none; /* Initially hidden */
+  margin: 0;
+  margin-bottom: 2rem;
+  color: var(--color-whitesmoke); /* Ensure text is visible */
+  text-align: center;
+}
+
+.arrow-btn {
+  display: none; /* Initially hidden */
+  background-color: transparent;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align button vertically */
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.gym-highlight:hover .overlay-text,
+.gym-highlight:hover .arrow-btn,
+.gym-highlight:active .overlay-icon,
+.gym-highlight:active .overlay-title {
+  /* Show icon and title on hover and active */
+  display: block; /* Display on hover and active */
+}
+/* Video Section */
+.video-sec {
+  margin: var(--margin-top-big);
+}
+
+.contain {
+  display: flex;
+}
+
+.video-heading {
+  font-family: var(--heading-font);
+  font-size: 4.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.video-text {
+  font-family: var(--heading-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-text);
+  width: 90%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.bg-img {
+  margin-top: 11rem;
+  margin-left: -1rem;
+  height: 20rem;
+  z-index: 5;
+}
+
+.main-video {
+  width: 55rem;
+  height: 30rem;
+  z-index: 15;
+}
+/* Schedule Section */
+.section-schedule {
+  margin: 8rem auto;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url("https://wp.xpeedstudio.com/gemvast/home-one-page-light/wp-content/uploads/sites/6/2020/03/banner_img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.schedule-heading {
+  margin-top: 6rem;
+  font-family: var(--heading-font);
+  font-size: 4.2rem;
+  font-weight: 800;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+.schedule-text {
+  font-family: var(--heading-font);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--color-whitesmoke);
+  width: 60%;
+  text-align: center;
+  margin: 2rem 0 4rem 0;
+}
+
+.calendar {
+  max-width: 114rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-cal {
+  background-color: var(--color-primary);
+  padding: 2.5rem 3.5rem;
+}
+
+.tb_icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: var(--color-white);
+}
+
+.first-row {
+  color: var(--color-white);
+  background-color: var(--color-heading);
+  border: 0;
+  display: table-row;
+  vertical-align: inherit;
+}
+
+/* .second-row {
+  color: var(--color-white);
+  background-color: var(--color-heading);
+  border: 0;
+  display: table-row;
+  vertical-align: inherit;
+} */
+
+.days {
+  /* color: var(--color-white);
+  background-color: var(--color-heading); */
+  padding: 2.5rem 3.5rem;
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.time {
+  background-color: var(--color-heading);
+  color: var(--color-white);
+  padding: 4.5rem 3.5rem;
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.big {
+  background-color: #f0b531;
+  color: var(--color-white);
+  padding: 4.5rem 5.5rem;
+  text-align: center;
+}
+.big2 {
+  background-color: #ea4b4a;
+  color: var(--color-white);
+  padding: 4.5rem 5.5rem;
+  text-align: center;
+}
+.big3 {
+  background-color: #4cb0d3;
+  color: var(--color-white);
+  padding: 4.5rem 5.5rem;
+  text-align: center;
+}
+.big4 {
+  background-color: #3a3f7d;
+  color: var(--color-white);
+  padding: 4.5rem 5.5rem;
+  text-align: center;
+}
+.big5 {
+  background-color: #2f45c7;
+  color: var(--color-white);
+  padding: 4.5rem 5.5rem;
+  text-align: center;
+}
+.big6 {
+  background-color: #6acf6f;
+  color: var(--color-white);
+  padding: 4.5rem 5.5rem;
+  text-align: center;
+}
+
+.tab-heading {
+  font-family: var(--primary-font);
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+.table {
+  margin-bottom: 10rem;
+}
+/* Trainer Section */
+
+.team {
+  max-width: 120rem;
+  margin: -6rem auto;
+}
+
+.trainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-heading {
+  margin-top: 6rem;
+  font-family: var(--heading-font);
+  font-size: 4.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.team-text {
+  font-family: var(--heading-font);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--color-text);
+  width: 60%;
+  text-align: center;
+}
+
+.members {
+  margin: 8rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.trainer-p {
+  background-color: #fff;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  margin-bottom: 1.875rem;
+}
+.trainer-p:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.08);
+}
+
+.traner-p1 {
+  width: 25rem;
+}
+.traner-p1:hover {
+  color: var(--color-hover);
+}
+
+.trainer-name {
+  padding-top: 1.4375rem;
+
+  font-family: var(--heading-font);
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-align: center;
+}
+.trainer-name:hover {
+  color: var(--color-primary);
+}
+
+.traner-text {
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-text);
+  text-align: center;
+  padding-bottom: 1.5625rem;
+}
+.dots-team {
+  position: relative;
+}
+
+.dot {
+  position: absolute;
+  top: 0;
+  right: 59.2rem;
+
+  animation-name: bounce;
+  opacity: 1;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  z-index: 2;
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  40% {
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+/* BMI */
+.bmi {
+  margin: 8rem auto;
+  /* height: 100vh; */
+  background-image: url("https://wp.xpeedstudio.com/gemvast/home-one-page-light/wp-content/uploads/sites/6/2020/02/bmi-bg.png");
+  background-size: contain;
+}
+
+.bmi-box {
+  max-width: 120rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15rem;
+}
+
+.bmi-cal {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-bmi {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.bmi-chart {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.chart-heading {
+  font-family: var(--heading-font);
+  font-size: 3.6rem;
+  font-weight: 800;
+  color: var(--color-white);
+  margin-bottom: 2rem;
+}
+.chart-text {
+  font-family: var(--heading-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-whitesmoke);
+  width: 80%;
+}
+
+.table {
+  margin: 4rem 0;
+}
+
+.head-tab {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  background-color: #222222;
+  padding: 2rem 5rem 2rem 4rem;
+}
+
+.head {
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-white);
+  margin-right: 12rem;
+}
+
+.row-tab {
+  display: flex;
+  gap: 5rem;
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+}
+
+.row {
+  font-family: var(--heading-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-whitesmoke);
+  margin-right: 2rem;
+  margin-left: 2rem;
+  padding: 2rem;
+}
+
+.form {
+  margin: 5rem auto;
+}
+
+.group {
+  display: flex;
+  gap: 3rem;
+}
+
+input:placeholder-shown {
+  padding-bottom: 2rem;
+}
+
+.input-age {
+  margin-top: 5rem;
+}
+
+.age {
+  width: 70%;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.97);
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #ffffff;
+  background-color: transparent;
+  outline: none;
+}
+
+.height {
+  width: 33%;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.97);
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #ffffff;
+  background-color: transparent;
+  outline: none;
+}
+
+.kg {
+  width: 33%;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.97);
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #ffffff;
+  background-color: transparent;
+  outline: none;
+}
+/* Stories */
+.stories {
+  /* max-width: 120rem; */
+  margin: -8rem auto 0 auto;
+  padding: 0 0 10rem 0;
+
+  background-image: url("https://wp.xpeedstudio.com/gemvast/home-one-page-light/wp-content/uploads/sites/6/2020/02/testimonial_img.jpg");
+  background-size: cover;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.story-heading {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  font-family: var(--heading-font);
+  font-size: 4.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.story-text {
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  color: #676666;
+  width: 67%;
+  margin-bottom: 4rem;
+}
+
+.personality {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personality-box {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.person {
+  border: 5px solid #ededed;
+  border-radius: 50%;
+}
+
+.person-name {
+  font-family: var(--heading-font);
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.person-text {
+  font-family: var(--heading-font);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+/* Pricing */
+.pricing-sec {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url("https://wp.xpeedstudio.com/gemvast/home-one-page-light/wp-content/uploads/sites/6/2020/02/pricing_img-scaled.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pricing-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-heading {
+  margin-top: 6rem;
+  font-family: var(--heading-font);
+  font-size: 4.2rem;
+  font-weight: 800;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+.price-text {
+  font-family: var(--heading-font);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--color-whitesmoke);
+  width: 60%;
+  text-align: center;
+  margin: 2rem 0 4rem 0;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.price-card {
+  padding: 4rem 8rem;
+  background-color: #ffffff;
+  background-image: url(https://wp.xpeedstudio.com/gemvast/home-one-page-light/wp-content/uploads/sites/6/2020/02/pricing_bg.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-align: center;
+  max-width: 35rem;
+  margin-bottom: 8rem;
+}
+
+.price-btn:hover {
+  background-color: var(--color-primary);
+}
+
+.card-title {
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.price {
+  margin-bottom: 6rem;
+}
+
+sup {
+  font-family: var(--heading-font);
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 4.8rem;
+  vertical-align: super;
+  color: var(--color-primary);
+}
+
+.num {
+  font-family: var(--heading-font);
+  font-size: 7.2rem;
+  font-weight: 700;
+  line-height: 4.8rem;
+
+  color: var(--color-primary);
+}
+
+.period {
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+.price-item {
+  font-family: var(--heading-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: 3rem;
+  list-style: none;
+}
+
+.price-btn {
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: none;
+  padding: 1.5rem 4.5rem;
+  cursor: pointer;
+  color: var(--color-white);
+  background-color: var(--color-heading);
+}
+.dots-price {
+  position: relative;
+}
+
+.dotp {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  animation-name: bounce;
+  opacity: 1;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  z-index: 2;
+}
+/* CONTACT */
+.contact {
+  padding: 8rem 0 8rem 0;
+  background-color: var(--color-whitesmoke);
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont-heading {
+  margin-top: 8rem;
+  font-family: var(--heading-font);
+  font-size: 4.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.cont-text {
+  font-family: var(--heading-font);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--color-text);
+  width: 40%;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+.big-box {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 6rem 8rem;
+  background-color: var(--color-white);
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.058823529411764705);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 6rem;
+}
+
+.first-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 8rem;
+}
+
+.cont-form {
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+
+  color: var(--color-text);
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #bcb6b6;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+  transition: all 0.3s;
+}
+.cont-form:placeholder-shown {
+  padding-bottom: 4rem;
+}
+
+.second-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 8rem;
+}
+
+.third {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20rem;
+}
+
+.third-text {
+  font-family: var(--heading-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-text);
+  width: 50%;
+}
+/* LOGOS */
+.sec-logo {
+  background-color: var(--color-primary);
+  padding: 6rem 0;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+}
+/* Footer */
+.footer {
+  padding: 8rem 0;
+  background-color: var(--color-heading);
+  color: var(--color-white);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot {
+  flex: 0 0 35%;
+}
+
+.foot-logo {
+  margin-bottom: 2rem;
+}
+
+.foot-text {
+  font-family: var(--heading-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  width: 70%;
+}
+
+address {
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 2rem;
+  width: 60%;
+}
+
+.foot-icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.locpin-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: var(--color-primary);
+}
+
+.pin-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: var(--color-white);
+}
+.tel-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: var(--color-primary);
+}
+
+.tel {
+  font-family: var(--heading-font);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.foot-pages {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 10%;
+}
+.foot2-pages {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 10%;
+}
+
+.foot-head {
+  font-family: var(--heading-font);
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.pages {
+  font-family: var(--heading-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-whitesmoke);
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.pages:hover {
+  color: var(--color-primary);
+}
+
+.news-head {
+  font-family: var(--heading-font);
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.new-text {
+  font-family: var(--heading-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-whitesmoke);
+  width: 80%;
+  margin-bottom: 6rem;
+}
+
+.news-inp {
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 1.5rem;
+  background-color: #262626;
+  border: none;
+  outline: none;
+}
+
+.news-inp:hover,
+.news-inp:active {
+  background-color: var(--color-white);
+}
+
+.scrb {
+  font-family: var(--heading-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 1.5rem;
+  border: 1px solid #858181;
+  background-color: var(--color-heading);
+  color: var(--color-white);
+  cursor: pointer;
+  padding-top: 1.3rem;
+  padding-bottom: 2rem;
+}
+
+.copyright {
+  background-color: #000;
+  height: 10rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.copy-block {
+  margin-left: -18rem;
+}
+
+.copy-text {
+  font-family: var(--heading-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-whitesmoke);
+}
+.social-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: var(--color-white);
+  cursor: pointer;
+}
+.social-icon:hover {
+  fill: var(--color-primary);
+}
+
+.foot-social {
+  display: flex;
+  gap: 3rem;
+}
